@@ -1,0 +1,19 @@
+{
+  "name": "javascriptcalculadora",
+  "version": "1.0.0",
+  "description": "Criar uma calculadora dinâmica totalmente funcional usando Vanilla JavaScript.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajo2460/Calculadora-simples-com-JavaScript.git"
+  },
+  "author": "Joseph Safari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sajo2460/Calculadora-simples-com-JavaScript/issues"
+  },
+  "homepage": "https://github.com/sajo2460/Calculadora-simples-com-JavaScript#readme"
+}
