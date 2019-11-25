@@ -30,19 +30,28 @@ function init() {
   btnMaker('=', evalOutput);
   btnMaker('C', clrOutput);
  
+  function cOutput(v) {
+    output.style.border = v + ' 1px solid';
+    output.style.color = v;
+  }
+ 
   function evalOutput() {
-    output.style.border = 'black 1px solid';
+    cOutput('black');
     console.log('=');
     if (output.value === "") {
-      output.style.border = 'red 1px solid';
+      cOutput('red');
+    }
+    else if (eva) {
+      cOutput('red');
     }
     else {
       output.value = eval(output.value);
     }
+    dec = output.value.includes('.');
   }
  
   function clrOutput() {
-    output.style.border = 'black 1px solid';
+    cOutput('black');
     output.value = "";
   }
  
@@ -61,13 +70,13 @@ function init() {
  
   function addOutput(e) {
     console.log(dec);
-    output.style.border = 'black 1px solid';
+    cOutput('black');
     //console.log(e.target.val);
     let char = e.target.val;
     if (char == '.') {
       if (dec) {
         char = '';
-        output.style.border = 'red 1px solid';
+        cOutput('red');
       }
       else {
         dec = true;
